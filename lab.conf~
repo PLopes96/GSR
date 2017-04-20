@@ -1,9 +1,9 @@
 Sede[3]="C"
 Sede[4]="D"
-Sede[2]="J"
+Sede[2]="N"
 
 SedeAdminSW[3]="N"
-SedeAdminSW[0]="Jp"
+SedeAdminSW[0]="J"
 SedeAdminSW[1]="L"
 SedeAdminSW[2]="M"
 
@@ -12,7 +12,25 @@ SedePCD[0]="L"
 SedePCRH[0]="M"
 
 Porto[2]="D"
+Porto[0]="P"
+
+PortoAdminSW[0]="P"
+PortoAdminSW[1]="O"
+PortoAdminSW[2]="U"
+
+PortoPCC1[0]="O"
+PortoPCC2[0]="U"
+
+
 Lisboa[2]="C"
+Lisboa[0]="Z"
+
+LisboaAdminSW[0]="Z"
+LisboaAdminSW[1]="Y"
+LisboaAdminSW[2]="X"
+
+LisboaPCC1[0]="Y"
+LisboaPCC2[0]="X"
 
 ISP[1]="G"
 ISP[3]="E"
