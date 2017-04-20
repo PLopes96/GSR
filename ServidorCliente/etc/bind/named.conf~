@@ -7,6 +7,7 @@
 
 options {
         directory "/var/cache/bind";
+	recursion yes;
         // If there is a firewall between you and nameservers you want
         // to talk to, you might need to uncomment the query-source
         // directive below.  Previous versions of BIND always asked
@@ -36,9 +37,9 @@ zone "." {
 
 	// be authoritative for the localhost forward and reverse zones, and for
 	// broadcast zones as per RFC 1912
-zone "bomcliente" {
+zone "bomcliente.gsr" {
 	type master;
-	file "/etc/bind/db.gsr.bomcliente";
+	file "/etc/bind/db.bomcliente.gsr";
 	};
 
 

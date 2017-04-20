@@ -1,5 +1,5 @@
 $TTL   60000
-@               IN      SOA     ROOT-SERVER.    root.ROOT-SERVER. (
+@               IN      SOA     ISPdns.gsr.    root.ISPdns.gsr. (
                         2006031201 ; serial
                         28800 ; refresh
                         14400 ; retry
@@ -7,12 +7,16 @@ $TTL   60000
                         0 ; negative cache ttl
                         )
 
-@               IN      NS      ns.gsr.
-ns		IN	A	10.0.0.22
+@               IN      NS      ISPdns.gsr.
+ISPdns		IN	A	10.0.0.22
 
-bomcliente	IN	NS  	ns.bomcliente.gsr.
-ns.bomcliente.gsr 	IN	A 	10.0.0.2
+bomcliente		IN	NS  	ServidorCliente.bomcliente.gsr.
+ServidorCliente.bomcliente.gsr 	IN	A 	10.0.0.2
 
+ISPRouter0	IN	A	10.0.0.17
+ISPRouter1	IN	A	10.0.0.25
+ISPRouter2	IN	A	192.168.100.1
+ISPRouter3	IN	A	10.0.0.21
 
 
 
