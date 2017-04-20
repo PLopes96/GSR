@@ -1,2 +1,2 @@
-.             IN   NS       ns.
+.                 IN   NS       ns.
 ns.           IN   A        10.0.0.22
