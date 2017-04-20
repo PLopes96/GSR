@@ -21,7 +21,7 @@ PortoAdminSW[2]="U"
 PortoPCC1[0]="O"
 PortoPCC2[0]="U"
 
-
+Lisboa[1]="Q"
 Lisboa[2]="C"
 Lisboa[0]="Z"
 
@@ -31,6 +31,9 @@ LisboaAdminSW[2]="X"
 
 LisboaPCC1[0]="Y"
 LisboaPCC2[0]="X"
+
+LisboaVPC1[0]="Q"
+LisboaVPC2[0]="Q"
 
 ISP[1]="G"
 ISP[3]="E"
