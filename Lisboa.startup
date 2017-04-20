@@ -1,0 +1,2 @@
+ip addr add dev eth2 10.0.2.66/30 
+ip link set dev eth2 up
