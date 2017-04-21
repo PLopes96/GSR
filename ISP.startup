@@ -11,11 +11,11 @@ ip addr add dev eth3 10.0.0.21/30
 ip link set dev eth3 up
 
 
-
+ip route add 10.0.0.20/30 via 10.0.0.22
 ip route add 10.0.0.0/29 via 10.0.0.26
 ip route add 10.0.0.128/26 via 10.0.0.18
 ip route add 10.0.2.64/26 via 10.0.0.18
-ip route add 0.0.0.0/0 via 10.0.0.26
+
 
 
 
