@@ -13,6 +13,9 @@ ISPdns		IN	A	10.0.0.22
 bomcliente		IN	NS  	ServidorCliente.bomcliente.gsr.
 ServidorCliente.bomcliente.gsr 	IN	A 	10.0.0.2
 
+contatudo 		IN	NS	SedeDNSP.contatudo.gsr.
+SedeDNSP.contatudo.gsr	IN	A 	10.0.0.163
+
 ISPRouter0	IN	A	10.0.0.17
 ISPRouter1	IN	A	10.0.0.25
 ISPRouter2	IN	A	192.168.100.1

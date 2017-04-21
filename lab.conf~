@@ -1,18 +1,32 @@
 Sede[3]="C"
 Sede[4]="D"
 Sede[2]="N"
+Sede[1]="AA"
+Sede[5]="EE"
 
 SedeAdminSW[3]="N"
 SedeAdminSW[0]="J"
 SedeAdminSW[1]="L"
 SedeAdminSW[2]="M"
 
+SedePubSW[3]="AA"
+SedePubSW[0]="BB"
+SedePubSW[1]="CC"
+SedePubSW[2]="DD"
+
+SedeProxy[0]="BB"
+SedeDNSP[0]="CC"
+SedeDNSS[0]="DD"
+
 SedePCC[0]="J"
 SedePCD[0]="L"
 SedePCRH[0]="M"
 
+
+
 Porto[2]="D"
 Porto[0]="P"
+Porto[1]="B"
 
 PortoAdminSW[0]="P"
 PortoAdminSW[1]="O"
@@ -20,6 +34,11 @@ PortoAdminSW[2]="U"
 
 PortoPCC1[0]="O"
 PortoPCC2[0]="U"
+
+PortoVPC1[0]="B"
+PortoVPC2[0]="B"
+
+
 
 Lisboa[1]="Q"
 Lisboa[2]="C"
@@ -38,6 +57,8 @@ LisboaVPC2[0]="Q"
 ISP[1]="G"
 ISP[3]="E"
 ISP[2]=tap,192.168.100.2,192.168.100.1
+ISP[0]="EE"
+
 ISPdns[0]="E"
 
 
