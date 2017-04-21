@@ -8,6 +8,54 @@ $TTL   60000
                         )
 
 @			IN	NS	SedeDNSP.contatudo.gsr.
+@			IN	MX 5	mail.contatudo.gsr.
 SedeDNSP		IN	A	10.0.0.163
+
+SedePC1			IN	A	10.0.0.178
+SedePC2			IN	A	10.0.0.179
+SedePC3			IN	A	10.0.0.180
+SedePC4			IN	A	10.0.0.181
+SedePC5			IN	A	10.0.0.182
+SedePC6			IN	A	10.0.0.183
+
+SedeDNSP		IN	A	10.0.0.163
+SedeDNSS		IN	A	10.0.0.162
+SedeProxy		IN	A	10.0.0.164
+
+SedeMoni		IN	A	192.168.0.2
+SedeFile		IN	A	192.168.0.3
+
+PortoPC1		IN	A	10.0.0.146
+PortoPC2		IN	A	10.0.0.147
+PortoPC3		IN	A	10.0.0.148
+PortoPC4		IN	A	10.0.0.149
+PortoPC5		IN	A	10.0.0.150
+PortoPC6		IN	A	10.0.0.151
+PortoPC7		IN	A	10.0.0.152
+PortoPC8		IN	A	10.0.0.153
+PortoPC9		IN	A	10.0.0.154
+PortoPC10		IN	A	10.0.0.155
+
+PortoPCC1		IN	A	192.168.0.18
+PortoPCC2		IN	A	192.168.0.19
+PortoPCC3		IN	A	192.168.0.20
+PortoPCC4		IN	A	192.168.0.21
+
+
+LisboaPC1		IN	A	10.0.0.130
+LisboaPC2		IN	A	10.0.0.131
+LisboaPC3		IN	A	10.0.0.132
+LisboaPC4		IN	A	10.0.0.133
+LisboaPC5		IN	A	10.0.0.134
+LisboaPC6		IN	A	10.0.0.135
+LisboaPC7		IN	A	10.0.0.136
+LisboaPC8		IN	A	10.0.0.137
+LisboaPC9		IN	A	10.0.0.138
+LisboaPC10		IN	A	10.0.0.139
+
+LisboaPCC1		IN	A	192.168.0.10
+LisboaPCC2		IN	A	192.168.0.11
+LisboaPCC3		IN	A	192.168.0.12
+LisboaPCC4		IN	A	192.168.0.13
 
 

@@ -21,8 +21,8 @@ options {
         // forwarders {
         //      0.0.0.0;
         // };
-allow-query{any;};
-allow-recursion {0/0;};
+//allow-query{any;};
+//allow-recursion {0/0;};
 	};
 
 	// reduce log verbosity on issues outside our control

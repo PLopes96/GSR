@@ -1,0 +1,26 @@
+#Sede
+SedeAdminSW: Sede
+SedePubSW: Sede
+SedePriSW: Sede
+SedePCC: SedeAdminSW
+SedePCD: SedeAdminSW
+SedePCRH: SedeAdminSW
+SedeDNSP: SedePubSW
+SedeDNSS: SedePubSW
+SedeProxy: SedePubSW
+SedeMoni: SedePriSW
+SedeFile: SedePriSW
+
+#Lisboa
+LisboaAdminSW: Lisboa
+LisboaVPC1: Lisboa
+LisboaVPC2: Lisboa
+LisboaPCC1: LisboaAdminSW
+LisboaPCC2: LisboaAdminSW
+
+#Porto
+PortoAdminSW: Porto
+PortoVPC1: Porto
+PortoVPC2: Porto
+PortoPCC1: PortoAdminSW
+PortoPCC2: PortoAdminSW
