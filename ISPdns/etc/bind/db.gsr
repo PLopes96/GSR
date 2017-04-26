@@ -14,7 +14,9 @@ bomcliente		IN	NS  	ServidorCliente.bomcliente.gsr.
 ServidorCliente.bomcliente 	IN	A 	10.0.0.2
 
 contatudo 		IN	NS	SedeDNSP.contatudo.gsr.
+contatudo 		IN	NS	SedeDNSS.contatudo.gsr.
 SedeDNSP.contatudo	IN	A 	10.0.0.163
+SedeDNSS.contatudo	IN	A 	10.0.0.162
 
 ISPRouter0	IN	A	10.0.0.17
 ISPRouter1	IN	A	10.0.0.25

@@ -60,6 +60,7 @@ zone "255.in-addr.arpa" {
 
 zone "contatudo.gsr" {
 	type master;
+	also-notify {10.0.0.162;};
 	file "/etc/bind/db.contatudo.gsr";
 	};
 
