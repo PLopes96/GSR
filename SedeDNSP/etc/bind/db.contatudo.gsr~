@@ -61,5 +61,9 @@ mail			IN	A	10.0.0.163
 imap			IN	A	10.0.0.163
 pop			IN	A	10.0.0.163
 
+www			IN 	A	10.0.0.162
+intranet		IN 	A	10.0.0.162
+clientes		IN 	A	10.0.0.162
+
 
 

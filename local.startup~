@@ -1,0 +1,13 @@
+sudo route add -net 192.168.0.0 netmask 255.255.255.248 gw 192.168.100.1 dev nk_tap_joao
+
+sudo route add -net 10.0.0.0 netmask 255.255.255.128 gw 192.168.100.1 dev nk_tap_joao
+
+sudo route add -net 10.0.0.128 netmask 255.255.255.192 gw 192.168.100.1 dev nk_tap_joao
+
+sudo route add -net 10.0.2.64 netmask 255.255.255.192 gw 192.168.100.1 dev nk_tap_joao
+
+iptables -t nat -A POSTROUTING -o eth0 -j MASQUERADE
+
+
+
+

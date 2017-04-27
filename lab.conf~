@@ -3,6 +3,7 @@ Sede[4]="D"
 Sede[2]="N"
 Sede[1]="AA"
 Sede[5]="EE"
+Sede[0]="GG"
 
 SedeAdminSW[3]="N"
 SedeAdminSW[0]="J"
@@ -15,14 +16,14 @@ SedePubSW[1]="CC"
 SedePubSW[2]="DD"
 
 
-SedePriSW[1]="EE"
-SedePriSW[2]="FF"
-SedePriSW[2]="GG"
+SedePriSW[1]="FF"
+SedePriSW[0]="GG"
+SedePriSW[2]="HH"
 
 SedeProxy[0]="BB"
 SedeDNSP[0]="CC"
 SedeDNSS[0]="DD"
-SedeMoni[0]="EE"
+SedeMoni[0]="FF"
 
 SedePCC[0]="J"
 SedePCD[0]="L"
