@@ -9,3 +9,5 @@ ip route add 0.0.0.0/0 via 10.0.0.161
 
 a2ensite contatudo.gsr.conf
 /etc/init.d/apache2 restart
+
+/etc/init.d/snmpd start

@@ -8,3 +8,5 @@ ip addr add dev eth2 10.0.0.5/30
 ip link set dev eth2 up
 
 ip route add 0.0.0.0/0 via 10.0.0.25
+
+/etc/init.d/snmpd start

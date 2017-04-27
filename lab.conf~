@@ -14,9 +14,15 @@ SedePubSW[0]="BB"
 SedePubSW[1]="CC"
 SedePubSW[2]="DD"
 
+
+SedePriSW[1]="EE"
+SedePriSW[2]="FF"
+SedePriSW[2]="GG"
+
 SedeProxy[0]="BB"
 SedeDNSP[0]="CC"
 SedeDNSS[0]="DD"
+SedeMoni[0]="EE"
 
 SedePCC[0]="J"
 SedePCD[0]="L"
@@ -67,6 +73,8 @@ RouterCliente[1]="H"
 RouterCliente[2]="I"
 ServidorCliente[0]="H"
 PCCliente[0]="I"
+
+SedeMoni[mem]=100
 
 
 

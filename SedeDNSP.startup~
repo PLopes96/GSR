@@ -15,6 +15,9 @@ chmod go-rw /etc/exim4/exim4.conf
 adduser --disabled-password --gecos "" director
 echo 'director:pass' | chpasswd
 
+adduser --disabled-password --gecos "" rh
+echo 'rh:pass' | chpasswd
+
 adduser --disabled-password --gecos "" contabilidade
 echo 'contabilidade:pass' | chpasswd
 

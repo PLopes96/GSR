@@ -2,7 +2,7 @@
 ServerAdmin webmaster@contatudo.gsr
 ServerName contatudo.gsr
 ServerAlias www.contatudo.gsr
-DocumentRoot /var/www/www/contatudo.gsr
+DocumentRoot /var/www/www/
 </VirtualHost>
 
 <VirtualHost *:80>

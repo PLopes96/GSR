@@ -1,9 +1,8 @@
 ip addr add dev eth0 10.0.0.22/30 
 ip link set dev eth0 up
 
-ip route add 10.0.0.4/29 via 10.0.0.21
-ip route add 10.0.0.24/30 via 10.0.0.21
-ip route add 10.0.0.0/29 via 10.0.0.21
+ip route add 0.0.0.0/0 via 10.0.0.21
+
 
 
 /etc/init.d/bind start
