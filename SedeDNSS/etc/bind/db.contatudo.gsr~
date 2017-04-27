@@ -1,5 +1,5 @@
 $TTL   60000
-@               IN      SOA SedeDNSP.contatudo.gsr. root.SedeDNSP.contatudo.gsr. (
+@               IN      SOA SedeDNSS.contatudo.gsr. root.SedeDNSS.contatudo.gsr. (
                         2006031201 ; serial
                         28800 ; refresh
                         14400 ; retry
@@ -7,9 +7,9 @@ $TTL   60000
                         0 ; negative cache ttl
                         )
 
-@			IN	NS	SedeDNSP.contatudo.gsr.
+@			IN	NS	SedeDNSS.contatudo.gsr.
 @			IN	MX 5	mail.contatudo.gsr.
-SedeDNSP		IN	A	10.0.0.163
+SedeDNSS		IN	A	10.0.0.162
 
 SedePC1			IN	A	10.0.0.178
 SedePC2			IN	A	10.0.0.179
@@ -19,7 +19,6 @@ SedePC5			IN	A	10.0.0.182
 SedePC6			IN	A	10.0.0.183
 
 SedeDNSP		IN	A	10.0.0.163
-SedeDNSS		IN	A	10.0.0.162
 SedeProxy		IN	A	10.0.0.164
 
 SedeMoni		IN	A	192.168.0.2

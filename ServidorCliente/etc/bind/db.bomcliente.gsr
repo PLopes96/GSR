@@ -12,10 +12,9 @@ $TTL   60000
 ServidorCliente		IN	A	10.0.0.2
 
 PCCliente 		IN 	A	10.0.0.6 
-RouterCliente0		IN	A	10.0.0.26
-RouterCliente1		IN	A	10.0.0.1
-RouterCliente2		IN	A	10.0.0.5
 
-mail		IN	A	10.0.0.2
-imap		IN	A	10.0.0.2
-pop		IN	A	10.0.0.2
+mail			IN	A	10.0.0.2
+imap			IN	A	10.0.0.2
+pop			IN	A	10.0.0.2
+
+www			IN	A	10.0.0.2

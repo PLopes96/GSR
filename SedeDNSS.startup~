@@ -2,5 +2,10 @@
 ip addr add dev eth0 10.0.0.162/28
 ip link set dev eth0 up
 
-/etc/init.d/bind start
+ip route add 0.0.0.0/0 via 10.0.0.161
 
+/etc/init.d/bind start
+/etc/init.d/apache2 start
+
+a2ensite contatudo.gsr.conf
+/etc/init.d/apache2 restart

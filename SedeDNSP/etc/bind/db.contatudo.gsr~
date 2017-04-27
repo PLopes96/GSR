@@ -18,7 +18,6 @@ SedePC4			IN	A	10.0.0.181
 SedePC5			IN	A	10.0.0.182
 SedePC6			IN	A	10.0.0.183
 
-SedeDNSP		IN	A	10.0.0.163
 SedeDNSS		IN	A	10.0.0.162
 SedeProxy		IN	A	10.0.0.164
 
