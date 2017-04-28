@@ -1,4 +1,5 @@
 #Sede
+Sede: ISP
 SedeAdminSW: Sede
 SedePubSW: Sede
 SedePriSW: Sede
@@ -19,6 +20,7 @@ SedeMoni: Lisboa
 SedeMoni: Porto
 
 #Lisboa
+Lisboa: ISP
 LisboaAdminSW: Lisboa
 LisboaVPC1: Lisboa
 LisboaVPC2: Lisboa
@@ -26,8 +28,13 @@ LisboaPCC1: LisboaAdminSW
 LisboaPCC2: LisboaAdminSW
 
 #Porto
+Porto: ISP
 PortoAdminSW: Porto
 PortoVPC1: Porto
 PortoVPC2: Porto
 PortoPCC1: PortoAdminSW
 PortoPCC2: PortoAdminSW
+
+#BomCliente
+RouterCliente: ISP
+
