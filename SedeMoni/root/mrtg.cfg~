@@ -29,90 +29,6 @@ WorkDir: /var/www
 ######################################################################
 
 
-### Interface 1 >> Descr: 'lo' | Name: 'lo' | Ip: '127.0.0.1' | Eth: '' ###
-### The following interface is commented out because:
-### * it is a Software Loopback interface
-# 
-# Target[192.168.0.1_1]: 1:private@192.168.0.1:
-# SetEnv[192.168.0.1_1]: MRTG_INT_IP="127.0.0.1" MRTG_INT_DESCR="lo"
-# MaxBytes[192.168.0.1_1]: 1250000
-# Title[192.168.0.1_1]: Traffic Analysis for 1 -- Sede
-# PageTop[192.168.0.1_1]: <h1>Traffic Analysis for 1 -- Sede</h1>
-# 		<div id="sysdetails">
-# 			<table>
-# 				<tr>
-# 					<td>System:</td>
-# 					<td>Sede in Unknown (configure /etc/snmp/snmpd.local.conf)</td>
-# 				</tr>
-# 				<tr>
-# 					<td>Maintainer:</td>
-# 					<td>Root &lt;root@localhost&gt; (configure /etc/snmp/snmpd.local.conf)</td>
-# 				</tr>
-# 				<tr>
-# 					<td>Description:</td>
-# 					<td>lo  </td>
-# 				</tr>
-# 				<tr>
-# 					<td>ifType:</td>
-# 					<td>softwareLoopback (24)</td>
-# 				</tr>
-# 				<tr>
-# 					<td>ifName:</td>
-# 					<td>lo</td>
-# 				</tr>
-# 				<tr>
-# 					<td>Max Speed:</td>
-# 					<td>1250.0 kBytes/s</td>
-# 				</tr>
-# 				<tr>
-# 					<td>Ip:</td>
-# 					<td>127.0.0.1 (SedeMoni)</td>
-# 				</tr>
-# 			</table>
-# 		</div>
-
-
-### Interface 2 >> Descr: 'teql0' | Name: 'teql0' | Ip: '' | Eth: '' ###
-### The following interface is commented out because:
-### * it is administratively DOWN
-### * it is operationally DOWN
-### * has a speed of 0 which makes no sense
-# 
-# Target[192.168.0.1_2]: 2:private@192.168.0.1:
-# SetEnv[192.168.0.1_2]: MRTG_INT_IP="" MRTG_INT_DESCR="teql0"
-# MaxBytes[192.168.0.1_2]: 0
-# Title[192.168.0.1_2]: Traffic Analysis for 2 -- Sede
-# PageTop[192.168.0.1_2]: <h1>Traffic Analysis for 2 -- Sede</h1>
-# 		<div id="sysdetails">
-# 			<table>
-# 				<tr>
-# 					<td>System:</td>
-# 					<td>Sede in Unknown (configure /etc/snmp/snmpd.local.conf)</td>
-# 				</tr>
-# 				<tr>
-# 					<td>Maintainer:</td>
-# 					<td>Root &lt;root@localhost&gt; (configure /etc/snmp/snmpd.local.conf)</td>
-# 				</tr>
-# 				<tr>
-# 					<td>Description:</td>
-# 					<td>teql0  </td>
-# 				</tr>
-# 				<tr>
-# 					<td>ifType:</td>
-# 					<td>Other (1)</td>
-# 				</tr>
-# 				<tr>
-# 					<td>ifName:</td>
-# 					<td>teql0</td>
-# 				</tr>
-# 				<tr>
-# 					<td>Max Speed:</td>
-# 					<td>0.0 Bytes/s</td>
-# 				</tr>
-# 			</table>
-# 		</div>
-
-
 ### Interface 3 >> Descr: 'eth3' | Name: 'eth3' | Ip: '10.0.2.65' | Eth: '06-82-97-21-8c-a7' ###
 
 Target[192.168.0.1_3]: 3:private@192.168.0.1:
@@ -153,6 +69,43 @@ PageTop[192.168.0.1_3]: <h1>Traffic Analysis for eth3 -- Sede</h1>
 			</table>
 		</div>
 
+Target[192.168.0.1_3_3pkt]: .1.3.6.1.2.1.2.2.1.11.3&.1.3.6.1.2.1.2.2.1.17.3:private@192.168.11.1:
+MaxBytes[192.168.0.1_3_3pkt]: 1250000
+YLegend[192.168.0.1_3_3pkt]: Pkt per Second
+Title[192.168.0.1_3_3pkt]: Pkt Analysis for eth3 -- Sede
+PageTop[192.168.0.1_3_3pkt]: <h1>Pkt Analysis for eth3 – Sede</h1>
+		<div id="sysdetails">
+			<table>
+				<tr>
+					<td>System:</td>
+					<td>Sede in Unknown (configure /etc/snmp/snmpd.local.conf)</td>
+				</tr>
+				<tr>
+					<td>Maintainer:</td>
+					<td>Root &lt;root@localhost&gt; (configure /etc/snmp/snmpd.local.conf)</td>
+				</tr>
+				<tr>
+					<td>Description:</td>
+					<td>eth3  </td>
+				</tr>
+				<tr>
+					<td>ifType:</td>
+					<td>ethernetCsmacd (6)</td>
+				</tr>
+				<tr>
+					<td>ifName:</td>
+					<td>eth3</td>
+				</tr>
+				<tr>
+					<td>Max Speed:</td>
+					<td>1250.0 kBytes/s</td>
+				</tr>
+				<tr>
+					<td>Ip:</td>
+					<td>10.0.2.65 ()</td>
+				</tr>
+			</table>
+		</div>
 
 ### Interface 4 >> Descr: 'eth4' | Name: 'eth4' | Ip: '10.0.2.69' | Eth: '72-bd-ea-4f-44-bc' ###
 
@@ -161,6 +114,44 @@ SetEnv[192.168.0.1_4]: MRTG_INT_IP="10.0.2.69" MRTG_INT_DESCR="eth4"
 MaxBytes[192.168.0.1_4]: 1250000
 Title[192.168.0.1_4]: Traffic Analysis for eth4 -- Sede
 PageTop[192.168.0.1_4]: <h1>Traffic Analysis for eth4 -- Sede</h1>
+		<div id="sysdetails">
+			<table>
+				<tr>
+					<td>System:</td>
+					<td>Sede in Unknown (configure /etc/snmp/snmpd.local.conf)</td>
+				</tr>
+				<tr>
+					<td>Maintainer:</td>
+					<td>Root &lt;root@localhost&gt; (configure /etc/snmp/snmpd.local.conf)</td>
+				</tr>
+				<tr>
+					<td>Description:</td>
+					<td>eth4  </td>
+				</tr>
+				<tr>
+					<td>ifType:</td>
+					<td>ethernetCsmacd (6)</td>
+				</tr>
+				<tr>
+					<td>ifName:</td>
+					<td>eth4</td>
+				</tr>
+				<tr>
+					<td>Max Speed:</td>
+					<td>1250.0 kBytes/s</td>
+				</tr>
+				<tr>
+					<td>Ip:</td>
+					<td>10.0.2.69 ()</td>
+				</tr>
+			</table>
+		</div>
+
+Target[192.168.0.1_4pkt]: .1.3.6.1.2.1.2.2.1.11.3&.1.3.6.1.2.1.2.2.1.17.3:private@192.168.11.1:
+MaxBytes[192.168.0.1_4pkt]: 1250000
+YLegend[192.168.0.1_4pkt]: Pkt per Second
+Title[192.168.0.1_4pkt]: Pkt Analysis for eth4 -- Sede
+PageTop[192.168.0.1_4pkt]: <h1>Pkt Analysis for eth4 – Sede</h1>
 		<div id="sysdetails">
 			<table>
 				<tr>
@@ -235,6 +226,45 @@ PageTop[192.168.0.1_5]: <h1>Traffic Analysis for eth2 -- Sede</h1>
 			</table>
 		</div>
 
+Target[192.168.0.1_5pkt]: .1.3.6.1.2.1.2.2.1.11.3&.1.3.6.1.2.1.2.2.1.17.3:private@192.168.11.1:
+MaxBytes[192.168.0.1_5pkt]: 1250000
+YLegend[192.168.0.1_5pkt]: Pkt per Second
+Title[192.168.0.1_5pkt]: Pkt Analysis for eth2 -- Sede
+PageTop[192.168.0.1_5pkt]: <h1>Pkt Analysis for eth2 – Sede</h1>
+		<div id="sysdetails">
+			<table>
+				<tr>
+					<td>System:</td>
+					<td>Sede in Unknown (configure /etc/snmp/snmpd.local.conf)</td>
+				</tr>
+				<tr>
+					<td>Maintainer:</td>
+					<td>Root &lt;root@localhost&gt; (configure /etc/snmp/snmpd.local.conf)</td>
+				</tr>
+				<tr>
+					<td>Description:</td>
+					<td>eth2  </td>
+				</tr>
+				<tr>
+					<td>ifType:</td>
+					<td>ethernetCsmacd (6)</td>
+				</tr>
+				<tr>
+					<td>ifName:</td>
+					<td>eth2</td>
+				</tr>
+				<tr>
+					<td>Max Speed:</td>
+					<td>1250.0 kBytes/s</td>
+				</tr>
+				<tr>
+					<td>Ip:</td>
+					<td>10.0.0.177 ()</td>
+				</tr>
+			</table>
+		</div>
+
+
 
 ### Interface 6 >> Descr: 'eth1' | Name: 'eth1' | Ip: '10.0.0.161' | Eth: '7e-58-d7-24-27-1d' ###
 
@@ -243,6 +273,44 @@ SetEnv[192.168.0.1_6]: MRTG_INT_IP="10.0.0.161" MRTG_INT_DESCR="eth1"
 MaxBytes[192.168.0.1_6]: 1250000
 Title[192.168.0.1_6]: Traffic Analysis for eth1 -- Sede
 PageTop[192.168.0.1_6]: <h1>Traffic Analysis for eth1 -- Sede</h1>
+		<div id="sysdetails">
+			<table>
+				<tr>
+					<td>System:</td>
+					<td>Sede in Unknown (configure /etc/snmp/snmpd.local.conf)</td>
+				</tr>
+				<tr>
+					<td>Maintainer:</td>
+					<td>Root &lt;root@localhost&gt; (configure /etc/snmp/snmpd.local.conf)</td>
+				</tr>
+				<tr>
+					<td>Description:</td>
+					<td>eth1  </td>
+				</tr>
+				<tr>
+					<td>ifType:</td>
+					<td>ethernetCsmacd (6)</td>
+				</tr>
+				<tr>
+					<td>ifName:</td>
+					<td>eth1</td>
+				</tr>
+				<tr>
+					<td>Max Speed:</td>
+					<td>1250.0 kBytes/s</td>
+				</tr>
+				<tr>
+					<td>Ip:</td>
+					<td>10.0.0.161 ()</td>
+				</tr>
+			</table>
+		</div>
+
+Target[192.168.0.1_6pkt]: .1.3.6.1.2.1.2.2.1.11.3&.1.3.6.1.2.1.2.2.1.17.3:private@192.168.11.1:
+MaxBytes[192.168.0.1_6pkt]: 1250000
+YLegend[192.168.0.1_6pkt]: Pkt per Second
+Title[192.168.0.1_6pkt]: Pkt Analysis for eth1 -- Sede
+PageTop[192.168.0.1_6pkt]: <h1>Pkt Analysis for eth1 – Sede</h1>
 		<div id="sysdetails">
 			<table>
 				<tr>
@@ -317,6 +385,44 @@ PageTop[192.168.0.1_7]: <h1>Traffic Analysis for eth5 -- Sede</h1>
 			</table>
 		</div>
 
+Target[192.168.0.1_7pkt]: .1.3.6.1.2.1.2.2.1.11.3&.1.3.6.1.2.1.2.2.1.17.3:private@192.168.11.1:
+MaxBytes[192.168.0.1_7pkt]: 1250000
+YLegend[192.168.0.1_7pkt]: Pkt per Second
+Title[192.168.0.1_7pkt]: Pkt Analysis for eth5 -- Sede
+PageTop[192.168.0.1_7pkt]: <h1>Pkt Analysis for eth5 – Sede</h1>
+		<div id="sysdetails">
+			<table>
+				<tr>
+					<td>System:</td>
+					<td>Sede in Unknown (configure /etc/snmp/snmpd.local.conf)</td>
+				</tr>
+				<tr>
+					<td>Maintainer:</td>
+					<td>Root &lt;root@localhost&gt; (configure /etc/snmp/snmpd.local.conf)</td>
+				</tr>
+				<tr>
+					<td>Description:</td>
+					<td>eth5  </td>
+				</tr>
+				<tr>
+					<td>ifType:</td>
+					<td>ethernetCsmacd (6)</td>
+				</tr>
+				<tr>
+					<td>ifName:</td>
+					<td>eth5</td>
+				</tr>
+				<tr>
+					<td>Max Speed:</td>
+					<td>1250.0 kBytes/s</td>
+				</tr>
+				<tr>
+					<td>Ip:</td>
+					<td>10.0.0.18 ()</td>
+				</tr>
+			</table>
+		</div>
+
 
 ### Interface 8 >> Descr: 'eth0' | Name: 'eth0' | Ip: '192.168.0.1' | Eth: '8a-49-9c-44-27-1f' ###
 
@@ -358,6 +464,43 @@ PageTop[192.168.0.1_8]: <h1>Traffic Analysis for eth0 -- Sede</h1>
 			</table>
 		</div>
 
+Target[192.168.0.1_8pkt]: .1.3.6.1.2.1.2.2.1.11.3&.1.3.6.1.2.1.2.2.1.17.3:private@192.168.11.1:
+MaxBytes[192.168.0.1_8pkt]: 1250000
+YLegend[192.168.0.1_8pkt]: Pkt per Second
+Title[192.168.0.1_8pkt]: Pkt Analysis for eth0 -- Sede
+PageTop[192.168.0.1_8pkt]: <h1>Pkt Analysis for eth0 – Sede</h1>
+		<div id="sysdetails">
+			<table>
+				<tr>
+					<td>System:</td>
+					<td>Sede in Unknown (configure /etc/snmp/snmpd.local.conf)</td>
+				</tr>
+				<tr>
+					<td>Maintainer:</td>
+					<td>Root &lt;root@localhost&gt; (configure /etc/snmp/snmpd.local.conf)</td>
+				</tr>
+				<tr>
+					<td>Description:</td>
+					<td>eth0  </td>
+				</tr>
+				<tr>
+					<td>ifType:</td>
+					<td>ethernetCsmacd (6)</td>
+				</tr>
+				<tr>
+					<td>ifName:</td>
+					<td>eth0</td>
+				</tr>
+				<tr>
+					<td>Max Speed:</td>
+					<td>1250.0 kBytes/s</td>
+				</tr>
+				<tr>
+					<td>Ip:</td>
+					<td>192.168.0.1 ()</td>
+				</tr>
+			</table>
+		</div>
 
 
 ######################################################################
@@ -368,88 +511,7 @@ PageTop[192.168.0.1_8]: <h1>Traffic Analysis for eth0 -- Sede</h1>
 ######################################################################
 
 
-### Interface 1 >> Descr: 'lo' | Name: 'lo' | Ip: '127.0.0.1' | Eth: '' ###
-### The following interface is commented out because:
-### * it is a Software Loopback interface
-# 
-# Target[192.168.0.3_1]: 1:private@192.168.0.3:
-# SetEnv[192.168.0.3_1]: MRTG_INT_IP="127.0.0.1" MRTG_INT_DESCR="lo"
-# MaxBytes[192.168.0.3_1]: 1250000
-# Title[192.168.0.3_1]: Traffic Analysis for 1 -- SedeFile
-# PageTop[192.168.0.3_1]: <h1>Traffic Analysis for 1 -- SedeFile</h1>
-# 		<div id="sysdetails">
-# 			<table>
-# 				<tr>
-# 					<td>System:</td>
-# 					<td>SedeFile in Unknown (configure /etc/snmp/snmpd.local.conf)</td>
-# 				</tr>
-# 				<tr>
-# 					<td>Maintainer:</td>
-# 					<td>Root &lt;root@localhost&gt; (configure /etc/snmp/snmpd.local.conf)</td>
-# 				</tr>
-# 				<tr>
-# 					<td>Description:</td>
-# 					<td>lo  </td>
-# 				</tr>
-# 				<tr>
-# 					<td>ifType:</td>
-# 					<td>softwareLoopback (24)</td>
-# 				</tr>
-# 				<tr>
-# 					<td>ifName:</td>
-# 					<td>lo</td>
-# 				</tr>
-# 				<tr>
-# 					<td>Max Speed:</td>
-# 					<td>1250.0 kBytes/s</td>
-# 				</tr>
-# 				<tr>
-# 					<td>Ip:</td>
-# 					<td>127.0.0.1 (SedeMoni)</td>
-# 				</tr>
-# 			</table>
-# 		</div>
 
-
-### Interface 2 >> Descr: 'teql0' | Name: 'teql0' | Ip: '' | Eth: '' ###
-### The following interface is commented out because:
-### * it is administratively DOWN
-### * it is operationally DOWN
-### * has a speed of 0 which makes no sense
-# 
-# Target[192.168.0.3_2]: 2:private@192.168.0.3:
-# SetEnv[192.168.0.3_2]: MRTG_INT_IP="" MRTG_INT_DESCR="teql0"
-# MaxBytes[192.168.0.3_2]: 0
-# Title[192.168.0.3_2]: Traffic Analysis for 2 -- SedeFile
-# PageTop[192.168.0.3_2]: <h1>Traffic Analysis for 2 -- SedeFile</h1>
-# 		<div id="sysdetails">
-# 			<table>
-# 				<tr>
-# 					<td>System:</td>
-# 					<td>SedeFile in Unknown (configure /etc/snmp/snmpd.local.conf)</td>
-# 				</tr>
-# 				<tr>
-# 					<td>Maintainer:</td>
-# 					<td>Root &lt;root@localhost&gt; (configure /etc/snmp/snmpd.local.conf)</td>
-# 				</tr>
-# 				<tr>
-# 					<td>Description:</td>
-# 					<td>teql0  </td>
-# 				</tr>
-# 				<tr>
-# 					<td>ifType:</td>
-# 					<td>Other (1)</td>
-# 				</tr>
-# 				<tr>
-# 					<td>ifName:</td>
-# 					<td>teql0</td>
-# 				</tr>
-# 				<tr>
-# 					<td>Max Speed:</td>
-# 					<td>0.0 Bytes/s</td>
-# 				</tr>
-# 			</table>
-# 		</div>
 
 
 ### Interface 3 >> Descr: 'eth0' | Name: 'eth0' | Ip: '192.168.0.3' | Eth: '4a-01-52-b2-e3-8c' ###
@@ -502,90 +564,6 @@ PageTop[192.168.0.3_3]: <h1>Traffic Analysis for eth0 -- SedeFile</h1>
 ######################################################################
 
 
-### Interface 1 >> Descr: 'lo' | Name: 'lo' | Ip: '127.0.0.1' | Eth: '' ###
-### The following interface is commented out because:
-### * it is a Software Loopback interface
-# 
-# Target[10.0.0.162_1]: 1:private@10.0.0.162:
-# SetEnv[10.0.0.162_1]: MRTG_INT_IP="127.0.0.1" MRTG_INT_DESCR="lo"
-# MaxBytes[10.0.0.162_1]: 1250000
-# Title[10.0.0.162_1]: Traffic Analysis for 1 -- SedeDNSS
-# PageTop[10.0.0.162_1]: <h1>Traffic Analysis for 1 -- SedeDNSS</h1>
-# 		<div id="sysdetails">
-# 			<table>
-# 				<tr>
-# 					<td>System:</td>
-# 					<td>SedeDNSS in Unknown (configure /etc/snmp/snmpd.local.conf)</td>
-# 				</tr>
-# 				<tr>
-# 					<td>Maintainer:</td>
-# 					<td>Root &lt;root@localhost&gt; (configure /etc/snmp/snmpd.local.conf)</td>
-# 				</tr>
-# 				<tr>
-# 					<td>Description:</td>
-# 					<td>lo  </td>
-# 				</tr>
-# 				<tr>
-# 					<td>ifType:</td>
-# 					<td>softwareLoopback (24)</td>
-# 				</tr>
-# 				<tr>
-# 					<td>ifName:</td>
-# 					<td>lo</td>
-# 				</tr>
-# 				<tr>
-# 					<td>Max Speed:</td>
-# 					<td>1250.0 kBytes/s</td>
-# 				</tr>
-# 				<tr>
-# 					<td>Ip:</td>
-# 					<td>127.0.0.1 (SedeMoni)</td>
-# 				</tr>
-# 			</table>
-# 		</div>
-
-
-### Interface 2 >> Descr: 'teql0' | Name: 'teql0' | Ip: '' | Eth: '' ###
-### The following interface is commented out because:
-### * it is administratively DOWN
-### * it is operationally DOWN
-### * has a speed of 0 which makes no sense
-# 
-# Target[10.0.0.162_2]: 2:private@10.0.0.162:
-# SetEnv[10.0.0.162_2]: MRTG_INT_IP="" MRTG_INT_DESCR="teql0"
-# MaxBytes[10.0.0.162_2]: 0
-# Title[10.0.0.162_2]: Traffic Analysis for 2 -- SedeDNSS
-# PageTop[10.0.0.162_2]: <h1>Traffic Analysis for 2 -- SedeDNSS</h1>
-# 		<div id="sysdetails">
-# 			<table>
-# 				<tr>
-# 					<td>System:</td>
-# 					<td>SedeDNSS in Unknown (configure /etc/snmp/snmpd.local.conf)</td>
-# 				</tr>
-# 				<tr>
-# 					<td>Maintainer:</td>
-# 					<td>Root &lt;root@localhost&gt; (configure /etc/snmp/snmpd.local.conf)</td>
-# 				</tr>
-# 				<tr>
-# 					<td>Description:</td>
-# 					<td>teql0  </td>
-# 				</tr>
-# 				<tr>
-# 					<td>ifType:</td>
-# 					<td>Other (1)</td>
-# 				</tr>
-# 				<tr>
-# 					<td>ifName:</td>
-# 					<td>teql0</td>
-# 				</tr>
-# 				<tr>
-# 					<td>Max Speed:</td>
-# 					<td>0.0 Bytes/s</td>
-# 				</tr>
-# 			</table>
-# 		</div>
-
-
 ### Interface 3 >> Descr: 'eth0' | Name: 'eth0' | Ip: '10.0.0.162' | Eth: '36-cc-0e-ee-94-09' ###
 
 Target[10.0.0.162_3]: 3:private@10.0.0.162:
@@ -635,89 +613,6 @@ PageTop[10.0.0.162_3]: <h1>Traffic Analysis for eth0 -- SedeDNSS</h1>
 # Location: Unknown (configure /etc/snmp/snmpd.local.conf)
 ######################################################################
 
-
-### Interface 1 >> Descr: 'lo' | Name: 'lo' | Ip: '127.0.0.1' | Eth: '' ###
-### The following interface is commented out because:
-### * it is a Software Loopback interface
-# 
-# Target[10.0.0.163_1]: 1:private@10.0.0.163:
-# SetEnv[10.0.0.163_1]: MRTG_INT_IP="127.0.0.1" MRTG_INT_DESCR="lo"
-# MaxBytes[10.0.0.163_1]: 1250000
-# Title[10.0.0.163_1]: Traffic Analysis for 1 -- SedeDNSP
-# PageTop[10.0.0.163_1]: <h1>Traffic Analysis for 1 -- SedeDNSP</h1>
-# 		<div id="sysdetails">
-# 			<table>
-# 				<tr>
-# 					<td>System:</td>
-# 					<td>SedeDNSP in Unknown (configure /etc/snmp/snmpd.local.conf)</td>
-# 				</tr>
-# 				<tr>
-# 					<td>Maintainer:</td>
-# 					<td>Root &lt;root@localhost&gt; (configure /etc/snmp/snmpd.local.conf)</td>
-# 				</tr>
-# 				<tr>
-# 					<td>Description:</td>
-# 					<td>lo  </td>
-# 				</tr>
-# 				<tr>
-# 					<td>ifType:</td>
-# 					<td>softwareLoopback (24)</td>
-# 				</tr>
-# 				<tr>
-# 					<td>ifName:</td>
-# 					<td>lo</td>
-# 				</tr>
-# 				<tr>
-# 					<td>Max Speed:</td>
-# 					<td>1250.0 kBytes/s</td>
-# 				</tr>
-# 				<tr>
-# 					<td>Ip:</td>
-# 					<td>127.0.0.1 (SedeMoni)</td>
-# 				</tr>
-# 			</table>
-# 		</div>
-
-
-### Interface 2 >> Descr: 'teql0' | Name: 'teql0' | Ip: '' | Eth: '' ###
-### The following interface is commented out because:
-### * it is administratively DOWN
-### * it is operationally DOWN
-### * has a speed of 0 which makes no sense
-# 
-# Target[10.0.0.163_2]: 2:private@10.0.0.163:
-# SetEnv[10.0.0.163_2]: MRTG_INT_IP="" MRTG_INT_DESCR="teql0"
-# MaxBytes[10.0.0.163_2]: 0
-# Title[10.0.0.163_2]: Traffic Analysis for 2 -- SedeDNSP
-# PageTop[10.0.0.163_2]: <h1>Traffic Analysis for 2 -- SedeDNSP</h1>
-# 		<div id="sysdetails">
-# 			<table>
-# 				<tr>
-# 					<td>System:</td>
-# 					<td>SedeDNSP in Unknown (configure /etc/snmp/snmpd.local.conf)</td>
-# 				</tr>
-# 				<tr>
-# 					<td>Maintainer:</td>
-# 					<td>Root &lt;root@localhost&gt; (configure /etc/snmp/snmpd.local.conf)</td>
-# 				</tr>
-# 				<tr>
-# 					<td>Description:</td>
-# 					<td>teql0  </td>
-# 				</tr>
-# 				<tr>
-# 					<td>ifType:</td>
-# 					<td>Other (1)</td>
-# 				</tr>
-# 				<tr>
-# 					<td>ifName:</td>
-# 					<td>teql0</td>
-# 				</tr>
-# 				<tr>
-# 					<td>Max Speed:</td>
-# 					<td>0.0 Bytes/s</td>
-# 				</tr>
-# 			</table>
-# 		</div>
 
 
 ### Interface 3 >> Descr: 'eth0' | Name: 'eth0' | Ip: '10.0.0.163' | Eth: '82-80-43-d6-12-88' ###
@@ -770,90 +665,6 @@ PageTop[10.0.0.163_3]: <h1>Traffic Analysis for eth0 -- SedeDNSP</h1>
 ######################################################################
 
 
-### Interface 1 >> Descr: 'lo' | Name: 'lo' | Ip: '127.0.0.1' | Eth: '' ###
-### The following interface is commented out because:
-### * it is a Software Loopback interface
-# 
-# Target[10.0.0.164_1]: 1:private@10.0.0.164:
-# SetEnv[10.0.0.164_1]: MRTG_INT_IP="127.0.0.1" MRTG_INT_DESCR="lo"
-# MaxBytes[10.0.0.164_1]: 1250000
-# Title[10.0.0.164_1]: Traffic Analysis for 1 -- SedeProxy
-# PageTop[10.0.0.164_1]: <h1>Traffic Analysis for 1 -- SedeProxy</h1>
-# 		<div id="sysdetails">
-# 			<table>
-# 				<tr>
-# 					<td>System:</td>
-# 					<td>SedeProxy in Unknown (configure /etc/snmp/snmpd.local.conf)</td>
-# 				</tr>
-# 				<tr>
-# 					<td>Maintainer:</td>
-# 					<td>Root &lt;root@localhost&gt; (configure /etc/snmp/snmpd.local.conf)</td>
-# 				</tr>
-# 				<tr>
-# 					<td>Description:</td>
-# 					<td>lo  </td>
-# 				</tr>
-# 				<tr>
-# 					<td>ifType:</td>
-# 					<td>softwareLoopback (24)</td>
-# 				</tr>
-# 				<tr>
-# 					<td>ifName:</td>
-# 					<td>lo</td>
-# 				</tr>
-# 				<tr>
-# 					<td>Max Speed:</td>
-# 					<td>1250.0 kBytes/s</td>
-# 				</tr>
-# 				<tr>
-# 					<td>Ip:</td>
-# 					<td>127.0.0.1 (SedeMoni)</td>
-# 				</tr>
-# 			</table>
-# 		</div>
-
-
-### Interface 2 >> Descr: 'teql0' | Name: 'teql0' | Ip: '' | Eth: '' ###
-### The following interface is commented out because:
-### * it is administratively DOWN
-### * it is operationally DOWN
-### * has a speed of 0 which makes no sense
-# 
-# Target[10.0.0.164_2]: 2:private@10.0.0.164:
-# SetEnv[10.0.0.164_2]: MRTG_INT_IP="" MRTG_INT_DESCR="teql0"
-# MaxBytes[10.0.0.164_2]: 0
-# Title[10.0.0.164_2]: Traffic Analysis for 2 -- SedeProxy
-# PageTop[10.0.0.164_2]: <h1>Traffic Analysis for 2 -- SedeProxy</h1>
-# 		<div id="sysdetails">
-# 			<table>
-# 				<tr>
-# 					<td>System:</td>
-# 					<td>SedeProxy in Unknown (configure /etc/snmp/snmpd.local.conf)</td>
-# 				</tr>
-# 				<tr>
-# 					<td>Maintainer:</td>
-# 					<td>Root &lt;root@localhost&gt; (configure /etc/snmp/snmpd.local.conf)</td>
-# 				</tr>
-# 				<tr>
-# 					<td>Description:</td>
-# 					<td>teql0  </td>
-# 				</tr>
-# 				<tr>
-# 					<td>ifType:</td>
-# 					<td>Other (1)</td>
-# 				</tr>
-# 				<tr>
-# 					<td>ifName:</td>
-# 					<td>teql0</td>
-# 				</tr>
-# 				<tr>
-# 					<td>Max Speed:</td>
-# 					<td>0.0 Bytes/s</td>
-# 				</tr>
-# 			</table>
-# 		</div>
-
-
 ### Interface 3 >> Descr: 'eth0' | Name: 'eth0' | Ip: '10.0.0.164' | Eth: '52-1f-f4-8f-2c-5c' ###
 
 Target[10.0.0.164_3]: 3:private@10.0.0.164:
@@ -902,90 +713,6 @@ PageTop[10.0.0.164_3]: <h1>Traffic Analysis for eth0 -- SedeProxy</h1>
 # Contact: Root <root@localhost> (configure /etc/snmp/snmpd.local.conf)
 # Location: Unknown (configure /etc/snmp/snmpd.local.conf)
 ######################################################################
-
-
-### Interface 1 >> Descr: 'lo' | Name: 'lo' | Ip: '127.0.0.1' | Eth: '' ###
-### The following interface is commented out because:
-### * it is a Software Loopback interface
-# 
-# Target[10.0.2.70_1]: 1:private@10.0.2.70:
-# SetEnv[10.0.2.70_1]: MRTG_INT_IP="127.0.0.1" MRTG_INT_DESCR="lo"
-# MaxBytes[10.0.2.70_1]: 1250000
-# Title[10.0.2.70_1]: Traffic Analysis for 1 -- Porto
-# PageTop[10.0.2.70_1]: <h1>Traffic Analysis for 1 -- Porto</h1>
-# 		<div id="sysdetails">
-# 			<table>
-# 				<tr>
-# 					<td>System:</td>
-# 					<td>Porto in Unknown (configure /etc/snmp/snmpd.local.conf)</td>
-# 				</tr>
-# 				<tr>
-# 					<td>Maintainer:</td>
-# 					<td>Root &lt;root@localhost&gt; (configure /etc/snmp/snmpd.local.conf)</td>
-# 				</tr>
-# 				<tr>
-# 					<td>Description:</td>
-# 					<td>lo  </td>
-# 				</tr>
-# 				<tr>
-# 					<td>ifType:</td>
-# 					<td>softwareLoopback (24)</td>
-# 				</tr>
-# 				<tr>
-# 					<td>ifName:</td>
-# 					<td>lo</td>
-# 				</tr>
-# 				<tr>
-# 					<td>Max Speed:</td>
-# 					<td>1250.0 kBytes/s</td>
-# 				</tr>
-# 				<tr>
-# 					<td>Ip:</td>
-# 					<td>127.0.0.1 (SedeMoni)</td>
-# 				</tr>
-# 			</table>
-# 		</div>
-
-
-### Interface 2 >> Descr: 'teql0' | Name: 'teql0' | Ip: '' | Eth: '' ###
-### The following interface is commented out because:
-### * it is administratively DOWN
-### * it is operationally DOWN
-### * has a speed of 0 which makes no sense
-# 
-# Target[10.0.2.70_2]: 2:private@10.0.2.70:
-# SetEnv[10.0.2.70_2]: MRTG_INT_IP="" MRTG_INT_DESCR="teql0"
-# MaxBytes[10.0.2.70_2]: 0
-# Title[10.0.2.70_2]: Traffic Analysis for 2 -- Porto
-# PageTop[10.0.2.70_2]: <h1>Traffic Analysis for 2 -- Porto</h1>
-# 		<div id="sysdetails">
-# 			<table>
-# 				<tr>
-# 					<td>System:</td>
-# 					<td>Porto in Unknown (configure /etc/snmp/snmpd.local.conf)</td>
-# 				</tr>
-# 				<tr>
-# 					<td>Maintainer:</td>
-# 					<td>Root &lt;root@localhost&gt; (configure /etc/snmp/snmpd.local.conf)</td>
-# 				</tr>
-# 				<tr>
-# 					<td>Description:</td>
-# 					<td>teql0  </td>
-# 				</tr>
-# 				<tr>
-# 					<td>ifType:</td>
-# 					<td>Other (1)</td>
-# 				</tr>
-# 				<tr>
-# 					<td>ifName:</td>
-# 					<td>teql0</td>
-# 				</tr>
-# 				<tr>
-# 					<td>Max Speed:</td>
-# 					<td>0.0 Bytes/s</td>
-# 				</tr>
-# 			</table>
-# 		</div>
 
 
 ### Interface 3 >> Descr: 'eth2' | Name: 'eth2' | Ip: '10.0.2.70' | Eth: '7e-2c-53-42-29-71' ###
@@ -1118,90 +845,6 @@ PageTop[10.0.2.70_5]: <h1>Traffic Analysis for eth1 -- Porto</h1>
 # Contact: Root <root@localhost> (configure /etc/snmp/snmpd.local.conf)
 # Location: Unknown (configure /etc/snmp/snmpd.local.conf)
 ######################################################################
-
-
-### Interface 1 >> Descr: 'lo' | Name: 'lo' | Ip: '127.0.0.1' | Eth: '' ###
-### The following interface is commented out because:
-### * it is a Software Loopback interface
-# 
-# Target[10.0.2.66_1]: 1:private@10.0.2.66:
-# SetEnv[10.0.2.66_1]: MRTG_INT_IP="127.0.0.1" MRTG_INT_DESCR="lo"
-# MaxBytes[10.0.2.66_1]: 1250000
-# Title[10.0.2.66_1]: Traffic Analysis for 1 -- Lisboa
-# PageTop[10.0.2.66_1]: <h1>Traffic Analysis for 1 -- Lisboa</h1>
-# 		<div id="sysdetails">
-# 			<table>
-# 				<tr>
-# 					<td>System:</td>
-# 					<td>Lisboa in Unknown (configure /etc/snmp/snmpd.local.conf)</td>
-# 				</tr>
-# 				<tr>
-# 					<td>Maintainer:</td>
-# 					<td>Root &lt;root@localhost&gt; (configure /etc/snmp/snmpd.local.conf)</td>
-# 				</tr>
-# 				<tr>
-# 					<td>Description:</td>
-# 					<td>lo  </td>
-# 				</tr>
-# 				<tr>
-# 					<td>ifType:</td>
-# 					<td>softwareLoopback (24)</td>
-# 				</tr>
-# 				<tr>
-# 					<td>ifName:</td>
-# 					<td>lo</td>
-# 				</tr>
-# 				<tr>
-# 					<td>Max Speed:</td>
-# 					<td>1250.0 kBytes/s</td>
-# 				</tr>
-# 				<tr>
-# 					<td>Ip:</td>
-# 					<td>127.0.0.1 (SedeMoni)</td>
-# 				</tr>
-# 			</table>
-# 		</div>
-
-
-### Interface 2 >> Descr: 'teql0' | Name: 'teql0' | Ip: '' | Eth: '' ###
-### The following interface is commented out because:
-### * it is administratively DOWN
-### * it is operationally DOWN
-### * has a speed of 0 which makes no sense
-# 
-# Target[10.0.2.66_2]: 2:private@10.0.2.66:
-# SetEnv[10.0.2.66_2]: MRTG_INT_IP="" MRTG_INT_DESCR="teql0"
-# MaxBytes[10.0.2.66_2]: 0
-# Title[10.0.2.66_2]: Traffic Analysis for 2 -- Lisboa
-# PageTop[10.0.2.66_2]: <h1>Traffic Analysis for 2 -- Lisboa</h1>
-# 		<div id="sysdetails">
-# 			<table>
-# 				<tr>
-# 					<td>System:</td>
-# 					<td>Lisboa in Unknown (configure /etc/snmp/snmpd.local.conf)</td>
-# 				</tr>
-# 				<tr>
-# 					<td>Maintainer:</td>
-# 					<td>Root &lt;root@localhost&gt; (configure /etc/snmp/snmpd.local.conf)</td>
-# 				</tr>
-# 				<tr>
-# 					<td>Description:</td>
-# 					<td>teql0  </td>
-# 				</tr>
-# 				<tr>
-# 					<td>ifType:</td>
-# 					<td>Other (1)</td>
-# 				</tr>
-# 				<tr>
-# 					<td>ifName:</td>
-# 					<td>teql0</td>
-# 				</tr>
-# 				<tr>
-# 					<td>Max Speed:</td>
-# 					<td>0.0 Bytes/s</td>
-# 				</tr>
-# 			</table>
-# 		</div>
 
 
 ### Interface 3 >> Descr: 'eth1' | Name: 'eth1' | Ip: '10.0.0.129' | Eth: 'c6-7a-a9-16-b0-f7' ###
