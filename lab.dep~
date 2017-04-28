@@ -6,10 +6,17 @@ SedePCC: SedeAdminSW
 SedePCD: SedeAdminSW
 SedePCRH: SedeAdminSW
 SedeDNSP: SedePubSW
-SedeDNSS: SedePubSW
+SedeDNSS: SedeDNSP
 SedeProxy: SedePubSW
 SedeMoni: SedePriSW
 SedeFile: SedePriSW
+SedeMoni: SedeFile
+SedeMoni: SedeDNSP
+SedeMoni: SedeDNSS
+SedeMoni: SedeProxy
+SedeMoni: Sede
+SedeMoni: Lisboa
+SedeMoni: Porto
 
 #Lisboa
 LisboaAdminSW: Lisboa
