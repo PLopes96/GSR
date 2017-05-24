@@ -1,0 +1,31 @@
+$TTL   60000
+@               IN      SOA SedeDNSP.contatudo.gsr. root.SedeDNSP.contatudo.gsr. (
+                        2006031201 ; serial
+                        28800 ; refresh
+                        14400 ; retry
+                        3600000 ; expire
+                        0 ; negative cache ttl
+                        )
+
+@			IN	NS	SedeDNSP.contatudo.gsr.
+
+
+129			IN	PTR	Lisboa.contatudo.gsr.
+130			IN	PTR	LisboaPC1.contatudo.gsr.
+131			IN	PTR	LisboaPC2.contatudo.gsr.
+
+145			IN	PTR	Porto.contatudo.gsr.
+146			IN	PTR	PortoPC1.contatudo.gsr.
+147			IN	PTR	PortoPC2.contatudo.gsr.
+
+
+177			IN	PTR	Sede.contatudo.gsr.
+178			IN	PTR	SedePC1.contatudo.gsr.
+179			IN	PTR	SedePC2.contatudo.gsr.
+180			IN	PTR	SedePC3.contatudo.gsr.
+
+161			IN	PTR	Sede.contatudo.gsr.
+162			IN	PTR	SedeDNSS.contatudo.gsr.
+163			IN	PTR	SedeDNSP.contatudo.gsr.
+164			IN	PTR	SedeProxy.contatudo.gsr.
+

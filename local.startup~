@@ -1,4 +1,17 @@
+#Descomentar em "/etc/sysctl.conf"
+sudo nano /etc/sysctl.conf
+net.ipv4.ip_forward=1
+
+# Adicionar em "/etc/rc.local" 
+echo 1 > /proc/sys/net/ipv4/ip_forwarding
+iptables --table nat --append POSTROUTING --out-interface wlp3s0 -j MASQUERADE
+iptables --append FORWARD --in-interface nk_tap_joao -j ACCEPT
+
 sudo route add -net 192.168.0.0 netmask 255.255.255.248 gw 192.168.100.1 dev nk_tap_joao
+
+sudo route add -net 192.168.0.8 netmask 255.255.255.248 gw 192.168.100.1 dev nk_tap_joao
+
+sudo route add -net 192.168.0.16 netmask 255.255.255.248 gw 192.168.100.1 dev nk_tap_joao
 
 sudo route add -net 10.0.0.0 netmask 255.255.255.128 gw 192.168.100.1 dev nk_tap_joao
 
@@ -6,7 +19,6 @@ sudo route add -net 10.0.0.128 netmask 255.255.255.192 gw 192.168.100.1 dev nk_t
 
 sudo route add -net 10.0.2.64 netmask 255.255.255.192 gw 192.168.100.1 dev nk_tap_joao
 
-sudo iptables -t nat -A POSTROUTING -o eth0 -j MASQUERADE
 
 
 

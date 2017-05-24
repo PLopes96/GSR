@@ -24,6 +24,7 @@ SedeProxy[0]="BB"
 SedeDNSP[0]="CC"
 SedeDNSS[0]="DD"
 SedeMoni[0]="FF"
+SedeFile[0]="HH"
 
 SedePCC[0]="J"
 SedePCD[0]="L"

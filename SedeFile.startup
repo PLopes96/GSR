@@ -9,5 +9,16 @@ echo 'ftp1:pass' | chpasswd
 adduser --disabled-password --gecos "" ftp2
 echo 'ftp2:pass' | chpasswd
 
+
+adduser --disabled-password --gecos "" admin
+echo 'admin:pass' | chpasswd
+
+chmod 700 /home/admin/.ssh
+chown -R admin:admin /home/admin/.ssh
+chmod 600 /home/admin/.ssh/authorized_keys
+chmod g-w,o-w /home/admin
+
 /etc/init.d/proftpd start
 /etc/init.d/snmpd start
+
+/etc/init.d/ssh start

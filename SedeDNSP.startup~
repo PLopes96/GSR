@@ -42,6 +42,16 @@ echo 'porto-contab2:pass' | chpasswd
 adduser --disabled-password --gecos "" geral
 echo 'geral:pass' | chpasswd
 
+adduser --disabled-password --gecos "" admin
+echo 'admin:pass' | chpasswd
+
+chmod 700 /home/admin/.ssh
+chown -R admin:admin /home/admin/.ssh
+chmod g-w,o-w /home/admin
+
 /etc/init.d/bind start
 /etc/init.d/exim4 start
 /etc/init.d/inetd start
+/etc/init.d/ssh start
+
+/etc/init.d/snmpd start

@@ -21,7 +21,8 @@ options {
         // forwarders {
         //      0.0.0.0;
         // };
-
+allow-query{any;};
+allow-recursion {0/0;};
 	};
 
 	// reduce log verbosity on issues outside our control
@@ -42,5 +43,8 @@ zone "bomcliente.gsr" {
 	file "/etc/bind/db.bomcliente.gsr";
 	};
 
-
+zone "0/28.0.0.10.in-addr.arpa." in {
+	type master;
+	file "/etc/bind/db.10.0.0";
+};
 

@@ -11,6 +11,21 @@ $TTL   60000
 @			IN	MX 5	mail.contatudo.gsr.
 SedeDNSP		IN	A	10.0.0.163
 
+Sede			IN	A	10.0.0.161
+Sede			IN	A	192.168.0.1
+Sede			IN	A	10.0.2.69
+Sede			IN	A	10.0.0.18
+Sede			IN	A	10.0.0.177
+Sede			IN	A	10.0.2.65
+
+Lisboa			IN	A	10.0.2.66
+Lisboa			IN	A	192.168.0.9
+Lisboa			IN	A	10.0.0.129
+
+Porto			IN	A	10.0.2.70
+Porto			IN	A	10.0.0.145
+Porto			IN	A	192.168.0.17
+
 SedePC1			IN	A	10.0.0.178
 SedePC2			IN	A	10.0.0.179
 SedePC3			IN	A	10.0.0.180
@@ -64,6 +79,8 @@ pop			IN	A	10.0.0.163
 www			IN 	A	10.0.0.162
 intranet		IN 	A	10.0.0.162
 clientes		IN 	A	10.0.0.162
+
+ftp			IN	A	192.168.0.3
 
 
 

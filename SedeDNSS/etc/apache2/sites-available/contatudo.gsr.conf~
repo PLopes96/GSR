@@ -19,7 +19,16 @@ Allow from 10.0.2.64/26
 <VirtualHost *:80>
 ServerName contatudo.gsr
 ServerAlias clientes.contatudo.gsr
+Redirect permanent / https://clientes.contatudo.gsr
+</VirtualHost>
+
+<VirtualHost *:443>
+ServerName contatudo.gsr
+ServerAlias clientes.contatudo.gsr
 DocumentRoot /var/www/clientes/contatudo.gsr
+SSLEngine on
+SSLCertificateFile /etc/ssl/certs/clientes.crt
+SSLCertificateKeyFile /etc/ssl/certs/clientes.key
 <Directory /var/www/clientes>
 Order deny,allow
 Deny from all

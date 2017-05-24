@@ -1,0 +1,18 @@
+$TTL   60000
+@               IN      SOA ServidorCliente.bomcliente.gsr. root.ServidorCliente.bomcliente.gsr. (
+                        2006031201 ; serial
+                        28800 ; refresh
+                        14400 ; retry
+                        3600000 ; expire
+                        0 ; negative cache ttl
+                        )
+
+@			IN	NS	ServidorCliente.bomcliente.gsr.
+
+
+2			IN	PTR	ServidorCliente.bomcliente.gsr.
+1			IN	PTR	RouterCliente.bomcliente.gsr.
+5			IN	PTR	RouterCliente.bomcliente.gsr.
+6			IN	PTR	PCCliente.bomcliente.gsr.
+
+

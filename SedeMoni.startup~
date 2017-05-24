@@ -6,6 +6,11 @@ ip link set dev eth0 up
 
 ip route add 0.0.0.0/0 via 192.168.0.1
 
+
+adduser --disabled-password --gecos "" admin
+echo 'admin:pass' | chpasswd
+
+
 #cfgmaker --global "WorkDir: /var/www" private@192.168.0.1 private@192.168.0.3 private@10.0.0.162 private@10.0.0.163 private@10.0.0.164 private@10.0.2.70 private@10.0.2.66 --output /root/mrtg.cfg
 
 #mrtg mrtg.cfg --daemon
@@ -13,3 +18,5 @@ ip route add 0.0.0.0/0 via 192.168.0.1
 env LANG=C /usr/bin/mrtg /root/mrtg.cfg --daemon
 
 indexmaker --output /var/www/index.html /root/mrtg.cfg
+
+/etc/init.d/ssh start

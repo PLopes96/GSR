@@ -1,0 +1,21 @@
+$TTL   60000
+@               IN      SOA     ISPdns.gsr.    root.ISPdns.gsr. (
+                        2006031201 ; serial
+                        28800 ; refresh
+                        14400 ; retry
+                        3600000 ; expire
+                        0 ; negative cache ttl
+                        )
+
+@               IN      NS      ISPdns.gsr.
+
+17		IN	PTR	ISPRouter0.gsr.
+21		IN	PTR	ISPRouter3.gsr.
+25		IN	PTR	ISPRouter1.gsr.
+30		IN	PTR	ISPRouter4.gsr.
+
+26		IN	PTR	RouterCliente.gsr.
+
+29		IN	PTR	Admin.gsr.
+
+22		IN	PTR	ISPdns.gsr.

@@ -1,0 +1,47 @@
+$TTL   60000
+@               IN      SOA     ISPdns.gsr.    root.ISPdns.gsr. (
+                        2006031201 ; serial
+                        28800 ; refresh
+                        14400 ; retry
+                        3600000 ; expire
+                        0 ; negative cache ttl
+                        )
+
+@               IN      NS      ISPdns.gsr.
+
+17		IN	PTR	ISPRouter0.gsr.
+21		IN	PTR	ISPRouter3.gsr.
+25		IN	PTR	ISPRouter1.gsr.
+30		IN	PTR	ISPRouter4.gsr.
+
+26		IN	PTR	RouterCliente.gsr.
+
+29		IN	PTR	Admin.gsr.
+
+22		IN	PTR	ISPdns.gsr.
+
+128/26		IN	NS 	SedeDNSP.contatudo.gsr.
+
+
+
+129		IN	CNAME	129.128/26.0.0.10.IN-ADDR.ARPA.
+130		IN	CNAME	130.128/26.0.0.10.IN-ADDR.ARPA.
+131		IN	CNAME	131.128/26.0.0.10.IN-ADDR.ARPA.
+145		IN	CNAME	145.128/26.0.0.10.IN-ADDR.ARPA.
+177		IN	CNAME	177.128/26.0.0.10.IN-ADDR.ARPA.
+178		IN	CNAME	178.128/26.0.0.10.IN-ADDR.ARPA.
+179		IN	CNAME	179.128/26.0.0.10.IN-ADDR.ARPA.
+180		IN	CNAME	180.128/26.0.0.10.IN-ADDR.ARPA.
+161		IN	CNAME	161.128/26.0.0.10.IN-ADDR.ARPA.
+162		IN	CNAME	162.128/26.0.0.10.IN-ADDR.ARPA.
+163		IN	CNAME	163.128/26.0.0.10.IN-ADDR.ARPA.
+164		IN	CNAME	164.128/26.0.0.10.IN-ADDR.ARPA.
+
+
+0/28		IN	NS	ServidorCliente.bomcliente.gsr.
+
+2		IN 	CNAME	2.0/28.0.0.10.IN-ADDR.ARPA.
+1		IN 	CNAME	1.0/28.0.0.10.IN-ADDR.ARPA.
+5		IN 	CNAME	5.0/28.0.0.10.IN-ADDR.ARPA.
+6		IN 	CNAME	6.0/28.0.0.10.IN-ADDR.ARPA.
+

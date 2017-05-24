@@ -22,6 +22,33 @@ ip route add 10.0.0.0/25 via 10.0.0.17
 ip route add 192.168.100.0/24 via 10.0.0.17
 ip route add 0.0.0.0/0 via 10.0.0.17
 
+iptables -N DENY_TCP_UDP_ICMP
+iptables -A DENY_TCP_UDP_ICMP -p tcp -j DROP
+iptables -A DENY_TCP_UDP_ICMP -p udp -j DROP
+iptables -A DENY_TCP_UDP_ICMP -p icmp -j DROP
+
+#Deny privadas para exterior e vice-versa
+
+iptables -A FORWARD -s 192.168.0.0/16 -o eth5 -j DENY_TCP_UDP_ICMP
+iptables -A FORWARD -i eth5 -d 192.168.0.0/16 -j DENY_TCP_UDP_ICMP
+
+#Deny à LAN Serviços Administrativos pelo exterior
+
+iptables -A FORWARD -i eth5 -d 10.0.0.176/28 -m state --state NEW -j DENY_TCP_UDP_ICMP
+
+#Deny Servidores
+
+#Deny HTTP Access
+
+iptables -A FORWARD -s 10.0.0.128/26 -d 10.0.0.162 -p tcp --dport 80 -j DROP
+iptables -A FORWARD -s 10.0.2.64/26 -d 10.0.0.162 -p tcp --dport 80 -j DROP
+
+#Transparent Proxy
+
+iptables -t nat -A PREROUTING -s 10.0.0.128/26 -p tcp --dport 80 -j DNAT --to-destination 10.0.0.164:3128
+iptables -t nat -A PREROUTING -s 10.0.2.64/26 -p tcp --dport 80 -j DNAT --to-destination 10.0.0.164:3128
+
+
 /etc/init.d/dhcp3-server start
 /etc/init.d/zebra start
 /etc/init.d/snmpd start

@@ -23,6 +23,7 @@ options {
         // };
 allow-query{any;};
 allow-recursion {0/0;};
+allow-transfer {"none";};
 	};
 
 	// reduce log verbosity on issues outside our control
@@ -59,10 +60,19 @@ zone "255.in-addr.arpa" {
 };
 
 zone "contatudo.gsr" {
-	type master;
-	also-notify {10.0.0.162;};
+	type slave;
 	file "/etc/bind/db.contatudo.gsr";
+	masters{10.0.0.163;};
 	};
+
+key key1. {
+	algorithm hmac-sha1;
+	secret "8bfb31cd62c948bed6d627cadcbbec7eaee8bf2q";
+};
+
+server 10.0.0.163{
+	keys {key1.;};
+};
 
 
 
