@@ -66,6 +66,9 @@ ISP[1]="G"
 ISP[3]="E"
 ISP[2]=tap,192.168.100.2,192.168.100.1
 ISP[0]="EE"
+ISP[4]="II"
+
+Admin[0]="II"
 
 ISPdns[0]="E"
 

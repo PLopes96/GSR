@@ -1,0 +1,93 @@
+Certificate:
+    Data:
+        Version: 3 (0x2)
+        Serial Number: 2 (0x2)
+        Signature Algorithm: sha1WithRSAEncryption
+        Issuer: C=PT, ST=Lisboa, L=Oeiras, O=IST, OU=ist, CN=IST CA/emailAddress=ist123@hmail.com\x1B[D\x1B[D\x1B[D
+        Validity
+            Not Before: May 24 18:15:55 2017 GMT
+            Not After : May 22 18:15:55 2027 GMT
+        Subject: C=PT, ST=Lisboa, L=Oeiras, O=IST, CN=client1/emailAddress=ist123@gmail.com
+        Subject Public Key Info:
+            Public Key Algorithm: rsaEncryption
+            RSA Public Key: (2048 bit)
+                Modulus (2048 bit):
+                    00:bf:bc:95:2d:b1:37:ef:26:c3:a4:ee:28:c4:c7:
+                    a1:d0:78:15:71:a6:c5:58:a7:e4:12:e7:6e:c4:03:
+                    d4:c6:b1:d7:39:d0:4d:ed:0b:8f:a4:51:c2:01:7c:
+                    dc:80:d5:e0:59:5e:db:22:d7:b6:6c:60:04:f3:56:
+                    0c:0f:c4:ef:a1:16:6c:97:59:94:2f:94:8e:08:c2:
+                    3f:9b:96:e3:c8:3e:0d:73:8f:f7:a2:82:33:b7:fb:
+                    e6:e6:0c:21:21:24:75:ce:41:56:f3:e3:c5:b7:ec:
+                    ec:3e:a7:44:10:c0:92:e0:8f:8c:45:b8:34:51:01:
+                    5e:fa:53:22:88:52:68:65:70:69:18:cd:d7:6a:7d:
+                    b1:b3:ce:52:97:af:47:81:b1:76:e1:fc:38:7d:d0:
+                    96:29:aa:05:b7:e4:84:1e:39:78:25:d3:d8:e3:13:
+                    10:2a:d3:d5:69:d3:af:59:99:ab:04:24:bf:ab:d3:
+                    aa:8b:d1:f2:a3:9a:08:b7:6c:94:ca:dc:51:51:e7:
+                    d6:ce:e0:da:ab:4d:f6:5b:ec:33:11:54:23:1b:7b:
+                    e5:e3:ba:43:74:26:13:ab:d5:36:77:0d:ab:cb:8a:
+                    0a:9a:61:fb:9c:de:f5:60:5a:2a:93:37:57:af:1c:
+                    ec:6b:52:ac:28:53:bc:a8:c0:1e:88:99:d2:69:ca:
+                    0c:cd
+                Exponent: 65537 (0x10001)
+        X509v3 extensions:
+            X509v3 Basic Constraints: 
+                CA:FALSE
+            Netscape Comment: 
+                Easy-RSA Generated Certificate
+            X509v3 Subject Key Identifier: 
+                F5:32:3C:3E:58:63:6B:4F:05:BA:1D:09:10:9C:35:9E:7A:B8:9F:40
+            X509v3 Authority Key Identifier: 
+                keyid:30:0E:DC:0F:00:ED:87:77:EF:A4:FC:AA:C2:04:68:86:C2:2B:AE:33
+                DirName:/C=PT/ST=Lisboa/L=Oeiras/O=IST/OU=ist/CN=IST CA/emailAddress=ist123@hmail.com\x1B[D\x1B[D\x1B[D
+                serial:E0:BC:1B:C8:33:3D:E0:99
+
+            X509v3 Extended Key Usage: 
+                TLS Web Client Authentication
+            X509v3 Key Usage: 
+                Digital Signature
+    Signature Algorithm: sha1WithRSAEncryption
+        be:78:ea:40:ac:12:b4:51:94:68:70:ba:f8:b2:a9:b1:aa:6f:
+        fc:5e:da:4c:cd:21:fb:b3:f3:1e:68:12:b7:38:d8:74:23:d7:
+        7f:2c:36:bc:0e:cd:01:c1:c6:a7:a1:10:22:5a:f2:a6:2d:bb:
+        80:8c:2d:a3:b5:34:d4:6b:e6:3a:7a:d2:81:c4:e1:50:38:a8:
+        c6:44:ea:7d:fe:d3:96:b3:78:0c:1e:2f:14:18:d5:a7:c4:80:
+        8a:38:0f:45:bf:c4:ff:98:55:fc:d7:9f:72:7f:86:3a:d4:99:
+        7d:f6:16:6a:06:a4:23:0e:74:ac:8c:41:99:08:f0:5c:45:ab:
+        51:6d:24:ae:32:27:72:74:a7:83:45:c1:e8:5c:99:16:0e:a2:
+        93:36:c8:27:92:06:8c:e3:ef:06:d3:aa:c7:f6:a8:bb:3e:6c:
+        27:cf:04:cf:dd:13:30:4e:4f:ba:40:28:c5:e7:51:eb:3e:27:
+        ec:70:cf:2e:0a:b7:61:1c:d7:27:e8:f5:f6:29:20:f0:ff:24:
+        a5:46:a4:85:46:0b:1d:aa:00:e8:d4:74:eb:1e:82:8b:06:db:
+        59:ec:84:0e:61:d7:28:0d:64:67:19:a6:c9:59:15:24:24:11:
+        2d:76:62:cd:a8:01:67:3a:1c:9e:3d:d0:e5:d9:f5:36:03:cb:
+        65:cf:2c:47
+-----BEGIN CERTIFICATE-----
+MIIEsTCCA5mgAwIBAgIBAjANBgkqhkiG9w0BAQUFADCBhjELMAkGA1UEBhMCUFQx
+DzANBgNVBAgTBkxpc2JvYTEPMA0GA1UEBxMGT2VpcmFzMQwwCgYDVQQKEwNJU1Qx
+DDAKBgNVBAsTA2lzdDEPMA0GA1UEAxMGSVNUIENBMSgwJgYJKoZIhvcNAQkBFhlp
+c3QxMjNAaG1haWwuY29tG1tEG1tEG1tEMB4XDTE3MDUyNDE4MTU1NVoXDTI3MDUy
+MjE4MTU1NVowcDELMAkGA1UEBhMCUFQxDzANBgNVBAgTBkxpc2JvYTEPMA0GA1UE
+BxMGT2VpcmFzMQwwCgYDVQQKEwNJU1QxEDAOBgNVBAMTB2NsaWVudDExHzAdBgkq
+hkiG9w0BCQEWEGlzdDEyM0BnbWFpbC5jb20wggEiMA0GCSqGSIb3DQEBAQUAA4IB
+DwAwggEKAoIBAQC/vJUtsTfvJsOk7ijEx6HQeBVxpsVYp+QS527EA9TGsdc50E3t
+C4+kUcIBfNyA1eBZXtsi17ZsYATzVgwPxO+hFmyXWZQvlI4Iwj+bluPIPg1zj/ei
+gjO3++bmDCEhJHXOQVbz48W37Ow+p0QQwJLgj4xFuDRRAV76UyKIUmhlcGkYzddq
+fbGzzlKXr0eBsXbh/Dh90JYpqgW35IQeOXgl09jjExAq09Vp069ZmasEJL+r06qL
+0fKjmgi3bJTK3FFR59bO4NqrTfZb7DMRVCMbe+XjukN0JhOr1TZ3DavLigqaYfuc
+3vVgWiqTN1evHOxrUqwoU7yowB6ImdJpygzNAgMBAAGjggE9MIIBOTAJBgNVHRME
+AjAAMC0GCWCGSAGG+EIBDQQgFh5FYXN5LVJTQSBHZW5lcmF0ZWQgQ2VydGlmaWNh
+dGUwHQYDVR0OBBYEFPUyPD5YY2tPBbodCRCcNZ56uJ9AMIG7BgNVHSMEgbMwgbCA
+FDAO3A8A7Yd376T8qsIEaIbCK64zoYGMpIGJMIGGMQswCQYDVQQGEwJQVDEPMA0G
+A1UECBMGTGlzYm9hMQ8wDQYDVQQHEwZPZWlyYXMxDDAKBgNVBAoTA0lTVDEMMAoG
+A1UECxMDaXN0MQ8wDQYDVQQDEwZJU1QgQ0ExKDAmBgkqhkiG9w0BCQEWGWlzdDEy
+M0BobWFpbC5jb20bW0QbW0QbW0SCCQDgvBvIMz3gmTATBgNVHSUEDDAKBggrBgEF
+BQcDAjALBgNVHQ8EBAMCB4AwDQYJKoZIhvcNAQEFBQADggEBAL546kCsErRRlGhw
+uviyqbGqb/xe2kzNIfuz8x5oErc42HQj138sNrwOzQHBxqehECJa8qYtu4CMLaO1
+NNRr5jp60oHE4VA4qMZE6n3+05azeAweLxQY1afEgIo4D0W/xP+YVfzXn3J/hjrU
+mX32FmoGpCMOdKyMQZkI8FxFq1FtJK4yJ3J0p4NFwehcmRYOopM2yCeSBozj7wbT
+qsf2qLs+bCfPBM/dEzBOT7pAKMXnUes+J+xwzy4Kt2Ec1yfo9fYpIPD/JKVGpIVG
+Cx2qAOjUdOsegosG21nshA5h1ygNZGcZpslZFSQkES12Ys2oAWc6HJ490OXZ9TYD
+y2XPLEc=
+-----END CERTIFICATE-----

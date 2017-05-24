@@ -19,6 +19,7 @@ ip link set dev eth5 up
 
 
 ip route add 10.0.0.0/25 via 10.0.0.17
+ip route add 10.0.0.192/28 via 10.0.0.162
 ip route add 192.168.100.0/24 via 10.0.0.17
 ip route add 0.0.0.0/0 via 10.0.0.17
 
