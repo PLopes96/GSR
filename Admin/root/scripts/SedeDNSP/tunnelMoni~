@@ -1,0 +1,6 @@
+#!/bin/bash
+ssh admin@10.0.0.163 screen -d -m "ssh -L 8080:localhost:22 admin@192.168.0.2 -Nf"
+sleep 5
+ssh -L 8081:localhost:8080 admin@10.0.0.163 -Nf
+sleep 5
+ssh admin@localhost -p 8081

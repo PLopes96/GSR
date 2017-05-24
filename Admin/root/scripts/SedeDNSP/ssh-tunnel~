@@ -1,5 +1,5 @@
 #!/bin/bash
-ssh admin@10.0.0.163 screen -d -m "ssh -L 15779:localhost:22 admin@10.0.0.163 -Nf"
+ssh admin@10.0.0.163 screen -d -m "ssh -L 15779:localhost:22 admin@192.168.0.3 -Nf"
 sleep 5
 ssh -L 15779:localhost:15779 admin@10.0.0.163 -Nf
 sleep 5

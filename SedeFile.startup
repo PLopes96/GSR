@@ -3,6 +3,8 @@ ip link set dev eth0 up
 
 ip route add 0.0.0.0/0 via 192.168.0.1
 
+dpkg -i /hostlab/sudo.deb
+
 adduser --disabled-password --gecos "" ftp1
 echo 'ftp1:pass' | chpasswd
 
@@ -18,7 +20,10 @@ chown -R admin:admin /home/admin/.ssh
 chmod 600 /home/admin/.ssh/authorized_keys
 chmod g-w,o-w /home/admin
 
+
 /etc/init.d/proftpd start
 /etc/init.d/snmpd start
 
 /etc/init.d/ssh start
+
+

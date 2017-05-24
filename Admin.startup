@@ -7,6 +7,7 @@ chmod 700 /root/.ssh
 chmod 700 /root/.ssh/id_rsa
 chmod 644 /root/.ssh/id_rsa.pub
 
-chmod 700 /root/scripts/SedeDNSP/ssh-tunnel
+chmod 700 /root/scripts/SedeDNSP/tunnelFile
+chmod 700 /root/scripts/SedeDNSP/tunnelMoni
 
 /etc/init.d/ssh start

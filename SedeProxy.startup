@@ -4,6 +4,7 @@ ip link set dev eth0 up
 
 ip route add 0.0.0.0/0 via 10.0.0.161
 
+dpkg -i /hostlab/sudo.deb
 
 adduser --disabled-password --gecos "" admin
 echo 'admin:pass' | chpasswd
