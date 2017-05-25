@@ -29,9 +29,4 @@ DocumentRoot /var/www/clientes/contatudo.gsr
 SSLEngine on
 SSLCertificateFile /etc/ssl/certs/clientes.crt
 SSLCertificateKeyFile /etc/ssl/certs/clientes.key
-<Directory /var/www/clientes>
-Order deny,allow
-Deny from all
-Allow from 10.0.0.6
-</Directory>
 </VirtualHost>

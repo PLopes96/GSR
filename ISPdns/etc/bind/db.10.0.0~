@@ -33,7 +33,7 @@ $TTL   60000
 
 
 128/26		IN	NS 	SedeDNSP.contatudo.gsr.
-
+128/26		IN	NS 	SedeDNSS.contatudo.gsr.
 
 
 129		IN	CNAME	129.128/26.0.0.10.IN-ADDR.ARPA.

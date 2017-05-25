@@ -135,6 +135,8 @@ ifconfig-pool-persist ipp.txt
 # back to the OpenVPN server.
 push "route 192.168.0.0 255.255.255.0"
 push "route 10.0.2.64 255.255.255.192"
+push "route 10.0.0.176 255.255.255.240"
+
 
 
 

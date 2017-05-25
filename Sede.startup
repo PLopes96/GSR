@@ -64,13 +64,14 @@ iptables -A FORWARD -o eth5 -j DENY_TCP_UDP_ICMP
 
 #Deny HTTP Access
 
+iptables -A FORWARD -s 10.0.0.164 -d 10.0.0.162 -p tcp --dport 80 -j ACCEPT
 iptables -A FORWARD -s 10.0.0.128/26 -d 10.0.0.162 -p tcp --dport 80 -j DROP
 iptables -A FORWARD -s 10.0.2.64/26 -d 10.0.0.162 -p tcp --dport 80 -j DROP
 
 #Transparent Proxy
 
-iptables -t nat -A PREROUTING -s 10.0.0.128/26 -p tcp --dport 80 -j DNAT --to-destination 10.0.0.164:3128
-iptables -t nat -A PREROUTING -s 10.0.2.64/26 -p tcp --dport 80 -j DNAT --to-destination 10.0.0.164:3128
+iptables -t nat -A PREROUTING -s 10.0.0.128/28 -p tcp --dport 80 -j DNAT --to-destination 10.0.0.164:3128
+iptables -t nat -A PREROUTING -s 10.0.0.144/28 -p tcp --dport 80 -j DNAT --to-destination 10.0.0.164:3128
 
 
 /etc/init.d/dhcp3-server start
