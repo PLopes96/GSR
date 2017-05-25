@@ -70,6 +70,8 @@ iptables -A FORWARD -s 10.0.2.64/26 -d 10.0.0.162 -p tcp --dport 80 -j DROP
 
 #Transparent Proxy
 
+iptables -A FORWARD -i eth5 -d 10.0.0.164 -p tcp --dport 80 -j ACCEPT
+
 iptables -t nat -A PREROUTING -s 10.0.0.128/28 -p tcp --dport 80 -j DNAT --to-destination 10.0.0.164:3128
 iptables -t nat -A PREROUTING -s 10.0.0.144/28 -p tcp --dport 80 -j DNAT --to-destination 10.0.0.164:3128
 
