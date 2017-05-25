@@ -50,7 +50,7 @@ iptables -A FORWARD -i eth5 -d 10.0.0.164 -p tcp --dport 111 -j DROP
 
 #Deny Proxy
 
-iptables -A FORWARD -i eth5 -d 10.0.0.164 -j DENY_TCP_UDP_ICMP
+iptables -A FORWARD -i eth5 -d 10.0.0.164 -m state --state NEW -j DENY_TCP_UDP_ICMP
 
 #Spoofing
 
