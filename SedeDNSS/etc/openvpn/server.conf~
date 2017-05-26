@@ -136,6 +136,11 @@ ifconfig-pool-persist ipp.txt
 push "route 192.168.0.0 255.255.255.0"
 push "route 10.0.2.64 255.255.255.192"
 push "route 10.0.0.176 255.255.255.240"
+push "route 10.0.0.144 255.255.255.240"
+push "route 10.0.0.128 255.255.255.240"
+push "route 10.0.0.163 255.255.255.255"
+push "route 10.0.0.164 255.255.255.255"
+
 
 
 
@@ -196,8 +201,8 @@ push "route 10.0.0.176 255.255.255.240"
 # http://openvpn.net/faq.html#dhcpcaveats
 # The addresses below refer to the public
 # DNS servers provided by opendns.com.
-;push "dhcp-option DNS 208.67.222.222"
-;push "dhcp-option DNS 208.67.220.220"
+push "dhcp-option DNS 10.0.0.163"
+push "dhcp-option DNS 10.0.0.193"
 
 # Uncomment this directive to allow different
 # clients to be able to "see" each other.

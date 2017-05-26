@@ -10,7 +10,7 @@ $TTL   60000
 @               IN      NS      ISPdns.gsr.
 
 64/26		IN	NS 	SedeDNSP.contatudo.gsr.
-
+64/26		IN	NS 	SedeDNSS.contatudo.gsr.
 
 65		IN	CNAME	65.64/26.2.0.10.IN-ADDR.ARPA.
 66		IN	CNAME	66.64/26.2.0.10.IN-ADDR.ARPA.

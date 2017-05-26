@@ -93,5 +93,9 @@ zone "64/26.2.0.10.in-addr.arpa." in {
 	allow-transfer {key key1.;};
 };
 
-
+zone "0.168.192.in-addr.arpa." {
+	type master;
+	file "/etc/bind/db.192.168.0";
+	allow-transfer {key key1.;};
+};
 

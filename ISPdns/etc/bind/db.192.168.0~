@@ -1,0 +1,27 @@
+$TTL   60000
+@               IN      SOA     ISPdns.gsr.    root.ISPdns.gsr. (
+                        2006031201 ; serial
+                        28800 ; refresh
+                        14400 ; retry
+                        3600000 ; expire
+                        0 ; negative cache ttl
+                        )
+
+@               IN      NS      ISPdns.gsr.
+
+0/16		IN	NS 	SedeDNSP.contatudo.gsr.
+0/16		IN	NS 	SedeDNSS.contatudo.gsr.
+
+1		IN	CNAME	1.0/16.0.168.192.IN-ADDR.ARPA.
+2		IN	CNAME	2.0/16.0.168.192.IN-ADDR.ARPA.
+3		IN	CNAME	3.0/16.0.168.192.IN-ADDR.ARPA.
+
+9		IN	CNAME	9.0/16.0.168.192.IN-ADDR.ARPA.
+10		IN	CNAME	10.0/16.0.168.192.IN-ADDR.ARPA.
+11		IN	CNAME	11.0/16.0.168.192.IN-ADDR.ARPA.
+
+17		IN	CNAME	17.0/16.0.168.192.IN-ADDR.ARPA.
+18		IN	CNAME	18.0/16.0.168.192.IN-ADDR.ARPA.
+19		IN	CNAME	19.0/16.0.168.192.IN-ADDR.ARPA.
+
+
